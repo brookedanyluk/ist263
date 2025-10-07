@@ -6,6 +6,8 @@ a {
     color: #673888;
 }
 
+h1, h2, h3{color: #011f4b; }
+
 nav {background-color: #4d1b7bff;
 padding: 10px;
 margin-bottom: 30px;}
