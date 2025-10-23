@@ -29,3 +29,8 @@ gap: 30 px;
 .col {flex: 1;
 padding: 20px;
 border-radius: 10px;}
+
+.row1 .col1 { background-color: #d8eaf7; }
+.row1 .col2 { background-color: #f7e9d8; }
+.row2 .col1 { background-color: #e3f7e2; }
+.row2 .col2 { background-color: #f7d8e6; }
