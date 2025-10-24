@@ -9,12 +9,24 @@
              <style>
                 table, th, td {border: 1px solid black;}
                 .evenrow {background-color: #f2f2f2f2;}
+                h1 {text-align: center;}
+
+                .skillsflexbox{display:flex;
+                    gap:20px;
+                    align-items: flex-start;
+            }
+
+            .skillsimage img {
+                max-width: 300px;
+                height: auto;
+            }
+    
             </style>
         </head>
 
 
 <body>
-    <nav> 
+    <nav>  
                     <a href="index.html">Home</a> |
                     <a href="skills.html">Skills</a> |
                     <a href="contact.html">Contact</a>
@@ -22,6 +34,12 @@
 
          <h1>Technical Skills</h1>   
 
+
+         <div class="skillsflexbox">
+
+            <div class="skillstable">
+            
+        
             <table>
         <caption>Technical Skills</caption>
         <tr>
@@ -80,6 +98,11 @@
             <td>Proficient</td>
         </tr>
     </table>
-    
+    </div>
+
+    <div class="skillsimage">
+        <img scr="images/skills.png" alt="Skills Image">
+    </div>
+    </div>
 </body>
 </html>
