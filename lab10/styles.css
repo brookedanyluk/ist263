@@ -44,7 +44,9 @@ gap:2em;
 }
 
 
-
+.row2 > .col {
+    flex: 1 1 300px;
+}
 
 .map iframe {width: 100%;
 height: auto;
@@ -72,3 +74,5 @@ display:block;}
     margin:0 2em 2em 0;
     max-width: 100%;
         height: auto;}
+
+   
