@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Change Example</title>
+    <style>
+        #clickableText {
+            font-size: 24px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="clickableText" onclick="changeText()">Syracuse University</div>
+
+    <script>
+        function changeText() {
+            const div = document.getElementById('clickableText');
+            div.textContent = "Orange Nation";
+            div.style.color = "orange";
+        }
+    </script>
+</body>
+</html>
