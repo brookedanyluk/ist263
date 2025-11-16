@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cape Cod Travel Guide | Home</title>
+
+<style>
+
+* { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #ffffff;
+      color: #0B1A2E;
+      line-height: 1.5;
+    }
+
+    /* ---------- HEADER ---------- */
+    header {
+      background-color: #F0F8FF;
+      padding: 20px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .site-title {
+      margin: 0;
+      font-size: 34px;
+      color: #0A4D68;
+      font-weight: 600;
+    }
+
+    .header-right {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 25px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #0A4D68;
+      font-size: 17px;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: #088395;
+      text-decoration: underline;
+    }
+
+    .search-input {
+      width: 250px;
+      max-width: 40vw;
+      padding: 8px 14px;
+      border-radius: 25px;
+      border: 2px solid #0A4D68;
+      outline: none;
+      font-size: 14px;
+    }
+
+    /* ---------- HERO SECTION ---------- */
+    .welcome-section {
+      text-align: center;
+      padding: 40px 20px 20px;
+      max-width: 760px;
+      margin: 0 auto;
+    }
+
+    .welcome-section h2 {
+      font-size: 28px;
+      margin-bottom: 10px;
+      color: #0B1A2E;
+    }
+
+    .cta-button {
+      display: inline-block;
+      padding: 10px 18px;
+      border: 2px solid #0A4D68;
+      background: white;
+      color: #0A4D68;
+      border-radius: 6px;
+      font-weight: 600;
+      margin-top: 10px;
+      text-decoration: none;
+    }
+
+    /* ---------- MAIN LAYOUT ---------- */
+    main {
+      max-width: 1200px;
+      margin: 30px auto;
+      padding: 0 20px 80px;
+    }
+
+    .main-grid {
+      display: flex;
+      gap: 40px;
+      align-items: flex-start;
+    }
+
+    .content {
+      flex: 2;
+    }
+
+    .sidebar {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      align-items: center;
+    }
+
+    .sidebar img {
+      width: 100%;
+      max-width: 340px;
+      aspect-ratio: 1/1;
+      object-fit: cover;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    /* ---------- EXPLORE GRID ---------- */
+    h2.section-title {
+      margin-top: 0;
+      font-size: 24px;
+      color: #0B1A2E;
+    }
+
+    .explore-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 20px;
+      max-width: 720px;
+    }
+
+    .info-card {
+      border: 1px solid #9aa9ad;
+      border-radius: 6px;
+      padding: 18px;
+      background: #ffffff;
+    }
+
+    .info-card h3 {
+      margin: 0 0 8px 0;
+      font-size: 16px;
+      color: #0B1A2E;
+    }
+
+    .info-card p {
+      margin: 0;
+      font-size: 14px;
+      color: #4a595f;
+    }
+
+    /* ---------- PLAN SECTION ---------- */
+    .plan {
+      margin-top: 40px;
+      max-width: 760px;
+    }
+
+    /* ---------- RESPONSIVE ---------- */
+    @media (max-width: 980px) {
+      .main-grid {
+        flex-direction: column;
+      }
+
+      .sidebar {
+        max-width: 420px;
+        margin: 0 auto;
+      }
+    }
+
+    @media (max-width: 760px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .search-input {
+        width: 100%;
+      }
+
+      .explore-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .sidebar img {
+        max-width: 90vw;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <h1 class="site-title">Visit Cape Cod</h1>
+
+    <div class="header-right">
+      <nav>
+        <ul>
+          <li><a href="projectindex.html">Home</a></li>
+          <li><a href="activities.html">Activities</a></li>
+          <li><a href="beach.html">Beaches</a></li>
+        </ul>
+      </nav>
+
+      <input class="search-input" type="search" placeholder="Search...">
+    </div>
+  </header>
+
+  <!-- HERO / WELCOME -->
+  <section class="welcome-section">
+    <h2>Welcome to Your Cape Cod Travel Guide</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo sagittis, sapien dui mattis dui, non pulvinar lorem felis nec erat.</p>
+    <a href="#plan" class="cta-button">Start Planning</a>
+  </section>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <div class="main-grid">
+
+      <!-- LEFT COLUMN -->
+      <div class="content">
+        <h2 class="section-title">Explore Cape Cod</h2>
+
+        <div class="explore-grid">
+
+          <div class="info-card">
+            <h3>Attractions</h3>
+            <p>Visit iconic lighthouses, go whale watching, and explore scenic bike trails that showcase Cape Cod’s beauty.</p>
+          </div>
+
+          <div class="info-card">
+            <h3>Restaurants</h3>
+            <p>Experience fresh seafood, waterfront dining, and local favorites across the Cape.</p>
+          </div>
+
+          <div class="info-card">
+            <h3>Beaches & Passes</h3>
+            <p>Relax on sandy beaches and purchase access passes for a smoother visit.</p>
+          </div>
+
+          <div class="info-card">
+            <h3>Events</h3>
+            <p>Discover local festivals, markets, and seasonal events that bring the Cape to life.</p>
+          </div>
+
+        </div>
+
+        <section id="plan" class="plan">
+          <h2 class="section-title">Plan Your Trip</h2>
+          <p>Not sure where to start? Our suggested activities and itineraries can help guide you through the best of Cape Cod.</p>
+        </section>
+      </div>
+
+      <!-- RIGHT COLUMN IMAGES -->
+      <div class="sidebar">
+        <img src="images/beach1.jpg" alt="Scenic Cape Cod coastline">
+        <img src="images/sign.jpg" alt="Welcome to Cape Cod sign">
+      </div>
+
+    </div>
+  </main>
+
+</body>
+</html>
