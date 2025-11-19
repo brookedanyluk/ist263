@@ -76,9 +76,9 @@
         }
 
   
-       .skip {
+        .skip {
     position: absolute;
-    left: -10000px;  /* hide off-screen */
+    left: -10000px;
     top: auto;
     width: 1px;
     height: 1px;
@@ -87,14 +87,14 @@
 }
 
 .skip:focus {
-    position: fixed;       /* show at top-left of viewport */
+    position: fixed;       /* fix at top-left */
     left: 1rem;
     top: 1rem;
     width: auto;
     height: auto;
     padding: 0.5rem 1rem;
-    background-color: yellow; /* yellow box */
-    color: black;             /* black text */
+    background-color: yellow;  /* yellow box */
+    color: black;              /* black text */
     border-radius: 4px;
     box-shadow: 0 0 5px rgba(0,0,0,0.5);
     z-index: 1000;
