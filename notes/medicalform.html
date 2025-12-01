@@ -1,0 +1,462 @@
+
+<!-- 
+    <h3>Important Information About Medical, Dental, Health, or Hospital Services</h3>
+    <p>
+        If your child needs medical, dental, health, or hospital services, you as a parent must give permission. It’s the law. 
+        What about times when you cannot be reached for permission? A child may be treated without parental consent when 
+        a physician determines a true emergency exists. That means the doctor determines the child needs immediate 
+        medical care and that an attempt to obtain parental consent would result in a delay which would increase the risk 
+        to the child's life or health.
+    </p>
+    <p>
+        Except in a true emergency, care may be ordinarily rendered to a child only with the consent of the parent or legal guardian. 
+        Sometimes a child may need unexpected care which is not, however, a true emergency. In such cases, trying to contact a parent 
+        for permission can delay treatment and create unnecessary anxiety for the child.
+    </p>
+    <p>
+        You can prepare for unexpected care your children might need when you are away from home. To do this, make sure babysitters 
+        know how to always reach you. And when you know you will be hard to reach, you can give permission to other adults. They 
+        can then act for you by permitting your child to be treated if unexpected care is needed.
+    </p>
+    <p>
+        This is a legal document. With it you may appoint relatives, friends, teachers, clergy, neighbors — anyone who is over 18 years of age — 
+        to be responsible for your children when you are away from them. It is especially important to prepare this form for occasions 
+        when you know it will be hard to contact you. Fill out this form carefully. Have your signature witnessed by an adult different 
+        from the person you are making responsible for your children. After you complete this form, please give it to the adult(s) 
+        you have named to act on your behalf.
+    </p>
+    <p>
+        If your child needs unexpected medical treatment, the responsible adult(s) should present this document to the appropriate person — 
+        physician, dentist, or hospital representative. This document shall be presented to a physician, dentist, or appropriate hospital 
+        representative at such times as unexpected medical, dental, surgical care, or hospitalization may be required.
+    </p>
+
+
+<br></br>
+<br></br>
+
+<h3>Authorization for Medical Treatment of Minors</h3>
+
+
+
+<h4>Names of Minors / Birthdates / Allergies or Special Conditions</h4>
+
+<div class="row">
+    <input type="text" name="Minor1 Name" placeholder="Child 1 Name" required>
+    <input type="date" name="Minor1 DOB" placeholder="Birthdate" required>
+    <input type="text" name="Minor1 Conditions" placeholder="Allergies/Special Conditions" required>
+</div>
+
+<div class="row">
+    <input type="text" name="Minor2 Name" placeholder="Child 2 Name">
+    <input type="date" name="Minor2 DOB" placeholder="Birthdate">
+    <input type="text" name="Minor2 Conditions" placeholder="Allergies/Special Conditions">
+</div>
+
+<div class="row">
+    <input type="text" name="Minor3 Name" placeholder="Child 3 Name">
+    <input type="date" name="Minor3 DOB" placeholder="Birthdate">
+    <input type="text" name="Minor3 Conditions" placeholder="Allergies/Special Conditions">
+</div>
+
+<div class="row">
+    <input type="text" name="Minor4 Name" placeholder="Child 4 Name">
+    <input type="date" name="Minor4 DOB" placeholder="Birthdate">
+    <input type="text" name="Minor4 Conditions" placeholder="Allergies/Special Conditions">
+</div>
+
+<h4>Medical Treatment Authorization</h4>
+
+<p>I/We, being the parent(s) or legal guardian(s) of the above named minor(s), do hereby appoint:</p>
+
+<table class="pickup-table">
+    <tr>
+        <th>Name</th>
+        <th>Address</th>
+        <th>Phone</th>
+    </tr>
+    <tr>
+        <td>HFC Staff</td>
+        <td>405 Gifford St. Syracuse, NY 13204</td>
+        <td>315-870-5104</td>
+    </tr>
+    <tr>
+        <td>Don Pier</td>
+        <td>405 Gifford St. Syracuse, NY 13204</td>
+        <td>315-498-1535</td>
+    </tr>
+</table>
+
+<p style="margin-top: 15px;">
+    To act on my/our behalf in authorizing unexpected medical, dental, or surgical care and hospitalization for the 
+    above-named minor(s) during the period of my/our absence from:
+</p>
+
+<div class="row">
+    <input type="text" placeholder="Start Month" name="Start Month" required>
+    <input type="number" placeholder="Day" name="Start Day" required>
+    <input type="number" placeholder="Year" name="Start Year" required>
+</div>
+
+<div class="row">
+    <label style="margin-top: 20px;">To:</label>
+</div>
+
+<div class="row">
+    <input type="text" value="August" name="End Month" readonly>
+    <input type="number" value="31" name="End Day" readonly>
+    <input type="number" value="2026" name="End Year" readonly>
+</div>
+
+
+
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Huntington Family Centers Form</title>
+<link rel="stylesheet" href="formstyles.css">
+</head>
+<body>
+
+<header class="soft-header">
+    <h1>Huntington Family Centers, Inc.</h1>
+    <p>
+        405 Gifford Street • Syracuse, NY 13204<br>
+        310 Seymour Street • Syracuse, NY 13204<br>
+        Phone: 315-476-3157
+    </p>
+    <p>Valid through August 31, 2026</p>
+    <img src="hfc.png" alt="Huntington Family Centers Logo" class="header-logo">
+</header>
+
+<h3>After School / Summer Program 2025–2026</h3>
+
+<form id="hfcForm" action="https://formspree.io/f/myzrjkpv" method="POST">
+    <!-- Child Info -->
+    <label>Child's Name:</label>
+    <div class="row">
+        <input type="text" name="Child Last Name" placeholder="Last">
+        <input type="text" name="Child First Name" placeholder="First">
+    </div>
+
+    <label>Today's Date:</label>
+    <input type="date" name="Date">
+
+    <label>Address:</label>
+    <input type="text" name="Address" placeholder="Street, City, State, Zip Code">
+
+    <label>Phone:</label>
+    <input type="tel" name="Phone">
+
+    <label>Ethnicity:</label>
+    <div class="checkbox-group">
+        <label><input type="radio" name="Ethnicity" value="Hispanic"> Hispanic</label>
+        <label><input type="radio" name="Ethnicity" value="Non-Hispanic"> Non-Hispanic</label>
+        <label><input type="radio" name="Ethnicity" value="Unknown"> Unknown</label>
+    </div>
+
+    <label>Race:</label>
+    <div class="checkbox-group">
+        <label><input type="radio" name="Race" value="African American"> African American</label>
+        <label><input type="radio" name="Race" value="Caucasian"> Caucasian</label>
+        <label><input type="radio" name="Race" value="Two or More Races"> Two or more Races</label>
+        <label><input type="radio" name="Race" value="Unknown"> Unknown</label>
+        <label><input type="radio" name="Race" value="Other"> Other</label>
+    </div>
+
+    <label>Date of Birth:</label>
+    <input type="date" name="Date of Birth">
+
+    <label>Age:</label>
+    <input type="number" name="Age">
+
+    <label>Gender/Identity:</label>
+    <input type="text" name="Gender">
+
+    <label>School:</label>
+    <input type="text" name="School">
+
+    <label>Grade:</label>
+    <input type="text" name="Grade">
+
+    <label>Allergies/Medical Conditions:</label>
+    <textarea name="Allergies or Medical Conditions"></textarea>
+
+    <!-- Parent/Guardian Info -->
+    <h4>Parent/Guardian Information</h4>
+    <label>Parent's Name:</label>
+    <input type="text" name="Parent1 Name">
+    <label>Daytime Phone:</label>
+    <input type="tel" name="Parent1 Day Phone">
+    <label>Place of Employment:</label>
+    <input type="text" name="Parent1 Employment">
+    <label>Other Phone:</label>
+    <input type="tel" name="Parent1 Other Phone">
+
+    <label>Parent's Name:</label>
+    <input type="text" name="Parent2 Name">
+    <label>Daytime Phone:</label>
+    <input type="tel" name="Parent2 Day Phone">
+    <label>Place of Employment:</label>
+    <input type="text" name="Parent2 Employment">
+    <label>Other Phone:</label>
+    <input type="tel" name="Parent2 Other Phone">
+
+    <label>Number of People in Household:</label>
+    <input type="number" name="Household Size">
+    <label>Monthly Income:</label>
+    <input type="number" name="Monthly Income">
+    <label>Email address for Program Information:</label>
+    <input type="email" name="Info Email">
+    <label>DSS, FS, or AFDC Case #:</label>
+    <input type="text" name="Case Number">
+
+    <label>Emergency Contact(s):</label>
+    <input type="text" name="Emergency Contact">
+    <label>Emergency Phone:</label>
+    <input type="tel" name="Emergency Phone">
+    <label>Emergency Contact Relationship to Child and Address:</label>
+    <textarea name="Emergency Contact Details"></textarea>
+
+    <p class="note">
+        While in attendance, your child will receive nutritious snacks. Occasional special treats may be served in addition to the standard snack. Our menus will be posted and available for your review.
+    </p>
+
+    <label>Name of Parent or Legal Guardian (print):</label>
+    <input type="text" name="Guardian Printed Name">
+
+    <!-- Signature 1 -->
+    <label>Parent/Guardian Signature:</label>
+    <canvas id="signature-pad-1" width="400" height="100" style="border:1px solid #000;"></canvas>
+    <input type="hidden" name="Signature 1" id="signature-input-1">
+    <button type="button" onclick="clearPad(1)">Clear</button>
+
+    <!-- Photographs Permission -->
+    <h3>Photographs</h3>
+    <p>At times, program activities may involve still or motion photography. These images may be used internally or may be released to other agencies or to the media. May we include your child/children in these pictures?</p>
+    <div class="checkbox-group">
+        <label><input type="radio" name="Photo Permission" value="Yes"> Yes</label>
+        <label><input type="radio" name="Photo Permission" value="No"> No</label>
+    </div>
+
+    <!-- Pick Up -->
+    <h3>Pick Up</h3>
+    <table class="pickup-table">
+        <tr>
+            <th></th>
+            <th>Yes</th>
+            <th>No</th>
+        </tr>
+        <tr>
+            <td>My child is allowed to walk home from program each day:</td>
+            <td><input type="radio" name="Walk Home" value="Yes"></td>
+            <td><input type="radio" name="Walk Home" value="No"></td>
+        </tr>
+        <tr>
+            <td>My child will be picked up from program each day:</td>
+            <td><input type="radio" name="Pickup" value="Yes"></td>
+            <td><input type="radio" name="Pickup" value="No"></td>
+        </tr>
+    </table>
+
+    <label>Please specify days and times if walking:</label>
+    <textarea name="Walking Schedule"></textarea>
+
+    <h4>The following people are allowed to pick up my child/children from program:</h4>
+    <div class="row">
+        <input type="text" name="Pickup Person 1 Name" placeholder="Name">
+        <input type="tel" name="Pickup Person 1 Phone" placeholder="Phone Number">
+    </div>
+    <div class="row">
+        <input type="text" name="Pickup Person 2 Name" placeholder="Name">
+        <input type="tel" name="Pickup Person 2 Phone" placeholder="Phone Number">
+    </div>
+    <div class="row">
+        <input type="text" name="Pickup Person 3 Name" placeholder="Name">
+        <input type="tel" name="Pickup Person 3 Phone" placeholder="Phone Number">
+    </div>
+    <div class="row">
+        <input type="text" name="Pickup Person 4 Name" placeholder="Name">
+        <input type="tel" name="Pickup Person 4 Phone" placeholder="Phone Number">
+    </div>
+
+    <!-- Transportation -->
+    <h3>Transportation</h3>
+    <p>
+        I, <input type="text" name="Parent Name Transportation" style="width:200px;">,
+        give my child, <input type="text" name="Child Name Transportation" style="width:200px;"> 
+        permission to participate in the After School Program, to travel with staff in privately owned vehicles, 
+        agency vehicles, and vehicles owned by independent transportation companies. I also give permission 
+        for my child to receive emergency/first aid medical treatment if necessary.
+    </p>
+
+    <!-- Signature 2 -->
+    <label>Parent/Guardian Signature:</label>
+    <canvas id="signature-pad-2" width="400" height="100" style="border:1px solid #000;"></canvas>
+    <input type="hidden" name="Signature 2" id="signature-input-2">
+    <button type="button" onclick="clearPad(2)">Clear</button>
+
+    <label>Date:</label>
+    <input type="date" name="Transportation Date">
+
+    <!-- Absenteeism -->
+    <h3>Absenteeism Authorization Plan of Agreement</h3>
+    <p>I am registering my child in the Huntington Family Centers' After School/Summer Program. 
+    I understand that it is my responsibility to communicate with the program staff if my child is going 
+    to be absent from the program on any given day. In the event my child is absent from the program 
+    and the absence is unexcused, I am aware that staff will be calling all adults listed on the emergency 
+    contact form. If program staff is unable to reach an authorized adult directly, I consent to the following 
+    actions being taken:</p>
+
+    <p><strong>PLEASE ONLY CHOOSE ONE!</strong></p>
+
+    <div class="checkbox-group">
+        <label class="radio-inline">
+            <input type="radio" name="Absenteeism Authorization" value="Leave Voicemail">
+            <span>Staff should leave a voice message for all contacts indicating the date and time and the fact that the youth is absent and unaccounted for.</span>
+        </label>
+        <label class="radio-inline">
+            <input type="radio" name="Absenteeism Authorization" value="Contact Police">
+            <span>If unable to contact parent(s) or emergency contacts, staff should contact the police to report my child is missing.</span>
+        </label>
+        <label class="radio-inline">
+            <input type="radio" name="Absenteeism Authorization" value="Do Not Contact">
+            <span>Staff should not contact me, my emergency contacts, or the local law enforcement agency if my child does not arrive as scheduled. My child has permission to not attend the program on any given day.</span>
+        </label>
+    </div>
+
+    <!-- Signature 3 -->
+    <label>Parent/Guardian Signature:</label>
+    <canvas id="signature-pad-3" width="400" height="100" style="border:1px solid #000;"></canvas>
+    <input type="hidden" name="Signature 3" id="signature-input-3">
+    <button type="button" onclick="clearPad(3)">Clear</button>
+
+    <label>Date:</label>
+    <input type="date" name="Absenteeism Date">
+
+    <!-- OTC Medication -->
+    <h3>Permission to Administer Over-the-Counter Medication(s) Notification Agreement</h3>
+    <p><strong>If any brand is acceptable, please check yes:</strong></p>
+
+    <table class="pickup-table">
+        <tr>
+            <th>Medication Item</th>
+            <th>Yes</th>
+            <th>No</th>
+        </tr>
+        <tr>
+            <td>Hand Sanitizer</td>
+            <td><input type="radio" name="Hand Sanitizer" value="Yes"></td>
+            <td><input type="radio" name="Hand Sanitizer" value="No"></td>
+        </tr>
+        <tr>
+            <td>Antibacterial Hand Wipes</td>
+            <td><input type="radio" name="Hand Wipes" value="Yes"></td>
+            <td><input type="radio" name="Hand Wipes" value="No"></td>
+        </tr>
+        <tr>
+            <td>First Aid Cream</td>
+            <td><input type="radio" name="First Aid Cream" value="Yes"></td>
+            <td><input type="radio" name="First Aid Cream" value="No"></td>
+        </tr>
+        <tr>
+            <td>Triple Antibiotic Cream</td>
+            <td><input type="radio" name="Triple Antibiotic" value="Yes"></td>
+            <td><input type="radio" name="Triple Antibiotic" value="No"></td>
+        </tr>
+        <tr>
+            <td>Antiseptic Cream</td>
+            <td><input type="radio" name="Antiseptic Cream" value="Yes"></td>
+            <td><input type="radio" name="Antiseptic Cream" value="No"></td>
+        </tr>
+        <tr>
+            <td>Bee Sting Pads</td>
+            <td><input type="radio" name="Bee Sting Pads" value="Yes"></td>
+            <td><input type="radio" name="Bee Sting Pads" value="No"></td>
+        </tr>
+    </table>
+
+    <p>
+        I, <input type="text" name="OTC Permission Parent" style="width:200px;">,
+        give permission to the youth department staff to apply the above topical over-the-counter 
+        medications to my child.
+    </p>
+
+    <p>
+        I understand that I must provide my child with their own personal sunscreen and that my child is responsible 
+        for applying the sunscreen themselves.
+    </p>
+
+    <p>
+        I also agree to notify Huntington each time my child has been medicated or receives a treatment before coming 
+        to program. I will inform Huntington of the name of the medication, the time it was given, and any side effects 
+        the workers should be aware of.
+    </p>
+
+    <label>Child's Name:</label>
+    <input type="text" name="OTC Child Name">
+
+    <!-- Signature 4 -->
+    <label>Parent/Guardian Signature:</label>
+    <canvas id="signature-pad-4" width="400" height="100" style="border:1px solid #000;"></canvas>
+    <input type="hidden" name="Signature 4" id="signature-input-4">
+    <button type="button" onclick="clearPad(4)">Clear</button>
+
+    <label>Date:</label>
+    <input type="date" name="OTC Date">
+
+    <!-- Submit -->
+    <button type="submit" onclick="saveSignatures()">Submit Form</button>
+</form>
+
+<script>
+// Signature setup
+function setupSignaturePad(id) {
+    const canvas = document.getElementById(`signature-pad-${id}`);
+    const ctx = canvas.getContext('2d');
+    let drawing = false;
+
+    canvas.addEventListener('mousedown', () => drawing = true);
+    canvas.addEventListener('mouseup', () => drawing = false);
+    canvas.addEventListener('mouseout', () => drawing = false);
+    canvas.addEventListener('mousemove', (e) => {
+        if (!drawing) return;
+        const rect = canvas.getBoundingClientRect();
+        ctx.lineWidth = 2;
+        ctx.lineCap = 'round';
+        ctx.strokeStyle = '#000';
+        ctx.lineTo(e.clientX - rect.left, e.clientY - rect.top);
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.moveTo(e.clientX - rect.left, e.clientY - rect.top);
+    });
+}
+
+function clearPad(id) {
+    const canvas = document.getElementById(`signature-pad-${id}`);
+    const ctx = canvas.getContext('2d');
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+}
+
+// Convert signatures to Base64 before submit
+function saveSignatures() {
+    for (let i = 1; i <= 4; i++) {
+        const canvas = document.getElementById(`signature-pad-${i}`);
+        const input = document.getElementById(`signature-input-${i}`);
+        input.value = canvas.toDataURL('image/png');
+    }
+}
+
+// Initialize signature pads
+for (let i = 1; i <= 4; i++) {
+    setupSignaturePad(i);
+}
+</script>
+
+</body>
+</html>

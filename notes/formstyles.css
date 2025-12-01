@@ -1,0 +1,151 @@
+
+/* ===== Header With Logo ===== */
+.soft-header {
+    background: #e8e8e8;
+    padding: 30px;
+    border-radius: 14px;
+    text-align: center;
+    border: 2px solid #ccc;
+    margin-bottom: 30px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.08);
+}
+
+.header-logo {
+    width: 200px;          /* adjust if needed */
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.soft-header h1 {
+    margin-bottom: 8px;
+    color: #222;
+    font-size: 28px;
+}
+
+.soft-header p {
+    margin: 6px 0;
+    color: #333;
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background: #f4f4f4; /* neutral background */
+}
+
+h2, h3, h4 {
+    margin-bottom: 10px;
+    color: #222222; /* dark gray/black headings */
+}
+
+form {
+    max-width: 700px;
+    background: #ffffff; /* white form */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border: 2px solid #ccc;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #333333;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background: #ffffff;
+}
+
+input:focus, textarea:focus {
+    border-color: #2a6df4; /* accessible blue focus */
+    outline: none;
+    box-shadow: 0 0 5px rgba(42, 109, 244, 0.4);
+}
+
+textarea {
+    height: 70px;
+}
+
+.row {
+    display: flex;
+    gap: 10px;
+}
+
+.checkbox-group label {
+    display: inline-block;
+    margin-right: 20px;
+    color: #333;
+}
+
+button {
+    margin-top: 20px;
+    padding: 12px 20px;
+    background: #2a6df4;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1e4dbf;
+}
+
+.note {
+    margin-top: 20px;
+    font-style: italic;
+}
+
+.pickup-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.pickup-table th, .pickup-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.pickup-table th {
+    background: #e0e0e0;
+    color: #222;
+    font-weight: bold;
+}
+
+
+form {
+    width: 95%;              /* almost full page */
+    max-width: 1400px;       /* very wide, but still structured */
+    margin: auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    border: 2px solid #ccc;
+    box-shadow: 0 0 12px rgba(0,0,0,0.08);
+}
+
+.radio-inline {
+    display: flex;
+    align-items: flex-start; 
+    gap: 10px;              
+    margin-bottom: 15px;     
+}
+
+.radio-inline span {
+    display: inline-block;
+    max-width: 90%;          
+}
