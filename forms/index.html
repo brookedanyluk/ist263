@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Huntington Family Centers Form</title>
+<link rel="stylesheet" href="formstyles.css">
+<style>
+    /* Minimal style for signature block to ensure they stand out without overriding formstyles.css */
+    .signature-area {
+        margin: 15px 0;
+        padding: 10px;
+        border: 1px solid #eee; /* Light border for separation */
+        border-radius: 4px;
+        background-color: #f9f9f9;
+        display: block;
+    }
+    .signature-pad {
+        border: 1px solid #000; /* Keeps the border visual from your original script */
+        display: block;
+        margin: 5px 0 5px;
+        width: 100%;
+        max-width: 400px; /* Standardize size */
+        height: 100px;
+        background-color: #fff;
+    }
+    .clear-button {
+        padding: 5px 10px;
+        cursor: pointer;
+        background-color: #f44336;
+        color: white;
+        border: none;
+        border-radius: 4px;
+    }
+    .form-group label, .section label {
+        display: block; /* Ensures labels take up full width for a clean block layout */
+        margin-top: 10px;
+        font-weight: bold;
+    }
+</style>
+</head>
+<body>
+
+
+ <header class="soft-header">
+    <h1>Huntington Family Centers, Inc.</h1>
+    <p>
+        405 Gifford Street • Syracuse, NY 13204<br>
+        310 Seymour Street • Syracuse, NY 13204<br>
+        Phone: 315-476-3157
+    </p>
+    <p>Valid through August 31, 2026</p>
+    <img src="hfc.png" alt="Huntington Family Centers Logo" class="header-logo">
+</header>
+
+<h3>After School / Summer Program 2025–2026</h3>
+
+<form id="hfcForm" action="https://formspree.io/f/mqarbonv" method="POST">
+
+    <h3>Important Information About Medical, Dental, Health, or Hospital Services</h3>
+    <p>
+        If your child needs medical, dental, health, or hospital services, you as a parent must give permission. It’s the law. 
+        What about times when you cannot be reached for permission? A child may be treated without parental consent when 
+        a physician determines a true emergency exists. That means the doctor determines the child needs immediate 
+        medical care and that an attempt to obtain parental consent would result in a delay which would increase the risk 
+        to the child's life or health.
+    </p>
+    <p>
+        Except in a true emergency, care may be ordinarily rendered to a child only with the consent of the parent or legal guardian. 
+        Sometimes a child may need unexpected care which is not, however, a true emergency. In such cases, trying to contact a parent 
+        for permission can delay treatment and create unnecessary anxiety for the child.
+    </p>
+    <p>
+        You can prepare for unexpected care your children might need when you are away from home. To do this, make sure babysitters 
+        know how to always reach you. And when you know you will be hard to reach, you can give permission to other adults. They 
+        can then act for you by permitting your child to be treated if unexpected care is needed.
+    </p>
+    <p>
+        This is a legal document. With it you may appoint relatives, friends, teachers, clergy, neighbors — anyone who is over 18 years of age — 
+        to be responsible for your children when you are away from them. It is especially important to prepare this form for occasions 
+        when you know it will be hard to contact you. Fill out this form carefully. Have your signature witnessed by an adult different 
+        from the person you are making responsible for your children. After you complete this form, please give it to the adult(s) 
+        you have named to act on your behalf.
+    </p>
+    <p>
+        If your child needs unexpected medical treatment, the responsible adult(s) should present this document to the appropriate person — 
+        physician, dentist, or hospital representative. This document shall be presented to a physician, dentist, or appropriate hospital 
+        representative at such times as unexpected medical, dental, surgical care, or hospitalization may be required.
+    </p>
+
+
+<br>
+
+<h3>Authorization for Medical Treatment of Minors</h3>
+
+
+
+<h4>Names of Minors / Birthdates / Allergies or Special Conditions</h4>
+
+<div class="row">
+    <input type="text" name="Minor1 Name" placeholder="Child 1 Name" required>
+    <input type="date" name="Minor1 DOB" placeholder="Birthdate" required>
+    <input type="text" name="Minor1 Conditions" placeholder="Allergies/Special Conditions" required>
+</div>
+
+<div class="row">
+    <input type="text" name="Minor2 Name" placeholder="Child 2 Name">
+    <input type="date" name="Minor2 DOB" placeholder="Birthdate">
+    <input type="text" name="Minor2 Conditions" placeholder="Allergies/Special Conditions">
+</div>
+
+<div class="row">
+    <input type="text" name="Minor3 Name" placeholder="Child 3 Name">
+    <input type="date" name="Minor3 DOB" placeholder="Birthdate">
+    <input type="text" name="Minor3 Conditions" placeholder="Allergies/Special Conditions">
+</div>
+
+<div class="row">
+    <input type="text" name="Minor4 Name" placeholder="Child 4 Name">
+    <input type="date" name="Minor4 DOB" placeholder="Birthdate">
+    <input type="text" name="Minor4 Conditions" placeholder="Allergies/Special Conditions">
+</div>
+
+<h4>Medical Treatment Authorization</h4>
+
+<p>I/We, being the parent(s) or legal guardian(s) of the above named minor(s), do hereby appoint:</p>
+
+<table class="pickup-table">
+    <tr>
+        <th>Name</th>
+        <th>Address</th>
+        <th>Phone</th>
+    </tr>
+    <tr>
+        <td>HFC Staff</td>
+        <td>405 Gifford St. Syracuse, NY 13204</td>
+        <td>315-870-5104</td>
+    </tr>
+    <tr>
+        <td>Don Pier</td>
+        <td>405 Gifford St. Syracuse, NY 13204</td>
+        <td>315-498-1535</td>
+    </tr>
+</table>
+
+<p style="margin-top: 15px;">
+    To act on my/our behalf in authorizing unexpected medical, dental, or surgical care and hospitalization for the 
+    above-named minor(s) during the period of my/our absence from:
+</p>
+
+<div class="row">
+    <input type="text" placeholder="Start Month" name="Start Month" required>
+    <input type="number" placeholder="Day" name="Start Day" required>
+    <input type="number" placeholder="Year" name="Start Year" required>
+</div>
+
+<div class="row">
+    <label style="margin-top: 20px;">To:</label>
+</div>
+
+<div class="row">
+    <input type="text" value="August" name="End Month" readonly>
+    <input type="number" value="31" name="End Day" readonly>
+    <input type="number" value="2026" name="End Year" readonly>
+</div>
+
+
+
+<h4>Parent/Guardian Information</h4>
+
+<div class="row">
+    <input type="text" name="ParentGuardian1" placeholder="Parent/Guardian 1 Name" required>
+    <input type="text" name="ParentGuardian1Address" placeholder="Address" required>
+</div>
+
+<div class="signature-area">
+    <label>Signature (Parent/Guardian 1):</label>
+    <canvas id="signature-pad-parent1" class="signature-pad"></canvas>
+    <button type="button" class="clear-button" data-canvas-id="signature-pad-parent1">Clear Signature</button>
+</div>
+
+<div class="row">
+    <input type="text" name="ParentGuardian2" placeholder="Parent/Guardian 2 Name">
+    <input type="text" name="ParentGuardian2Address" placeholder="Address">
+</div>
+
+<div class="signature-area">
+    <label>Signature (Parent/Guardian 2):</label>
+    <canvas id="signature-pad-parent2" class="signature-pad"></canvas>
+    <button type="button" class="clear-button" data-canvas-id="signature-pad-parent2">Clear Signature</button>
+</div>
+
+<br>
+
+<h4>Witness Information</h4>
+
+<div class="row">
+    <input type="text" name="Witness1" placeholder="Witness Name" required>
+    <input type="date" name="Witness1Date" placeholder="Date" required>
+</div>
+
+<div class="signature-area">
+    <label>Witness 1 Signature:</label>
+    <canvas id="signature-pad-witness1" class="signature-pad"></canvas>
+    <button type="button" class="clear-button" data-canvas-id="signature-pad-witness1">Clear Signature</button>
+</div>
+
+<div class="row">
+    <input type="text" name="Witness2" placeholder="Second Witness Name">
+    <input type="date" name="Witness2Date" placeholder="Date">
+</div>
+
+<div class="signature-area">
+    <label>Witness 2 Signature:</label>
+    <canvas id="signature-pad-witness2" class="signature-pad"></canvas>
+    <button type="button" class="clear-button" data-canvas-id="signature-pad-witness2">Clear Signature</button>
+</div>
+
+<div class="row">
+    <input type="text" name="WitnessAddress" placeholder="Witness Address">
+</div>
+
+<br>
+
+<h4>Hospitalization Coverage for the Above-Named Minor</h4>
+
+<div class="row">
+    <input type="text" name="InsuranceCompany" placeholder="Insurance Company or Government Program" required>
+</div>
+
+
+
+<h4>Family Physician</h4>
+
+<div class="row">
+    <input type="text" name="InsuranceID" placeholder="I.D. or Contract Number" required>
+</div>
+<div class="row">
+    <input type="text" name="PhysicianNamePhone" placeholder="Name and Phone Number" required>
+</div>
+
+<br><br>
+
+
+<h2>NEW YORK STATE OFFICE OF CHILDREN AND FAMILY SERVICES</h2>
+<h3>DAY CARE REGISTRATION</h3>
+
+    <div class="section">
+    
+        <label>Child's Full Name:</label>
+        <input type="text" name="child_name" required>
+
+        <label>Does your child have any allergies?</label>
+        <div class="checkbox-group">
+            <label><input type="checkbox" name="allergies" value="Yes"> Yes</label>
+            <label><input type="checkbox" name="allergies" value="No"> No</label>
+        </div>
+        <label>If Yes, what is your child allergic to?</label>
+        <input type="text" name="allergy_details">
+
+        <p>Children who have special health care needs are those who have chronic physical, developmental, behavioral or emotional conditions expected to last 12 months or more and who also require health and related services of a type beyond that required by children generally. If you child does have special health care needs, please discuss these with your child-care provider.</p>
+            
+        <label>Child’s Source of Medical Care/Primary Care Physician's Name:</label>
+        <input type="text" name="physician_name">
+        <label>Telephone Number:</label>
+        <input type="tel" name="physician_phone">
+
+        <label>Child's Source of Dental care/Dentist's Name:</label>
+        <input type="text" name="dentist_name">
+        <label>Telephone Number:</label>
+        <input type="tel" name="dentist_phone">
+
+        <label>Name of Medical Care Facility/Hospital:</label>
+        <input type="text" name="hospital_name">
+        <label>Telephone Number:</label>
+        <input type="tel" name="hospital_phone">
+
+        <label>Would you like information on Child Health Plus?</label>
+        <div class="checkbox-group">
+            <label><input type="checkbox" name="child_health_plus" value="Yes"> Yes</label>
+            <label><input type="checkbox" name="child_health_plus" value="No"> No</label>
+        </div>
+    </div>
+
+    <div class="section">
+        <h3>Emergency Data</h3>
+        
+        <div class="form-group">
+            <label>Emergency Contact 1:</label>
+            <label>Relationship:</label>
+            <input type="text" name="emergency_relationship_1">
+            <label>Contact Name:</label>
+            <input type="text" name="emergency_name_1">
+            <label>Telephone Number:</label>
+            <input type="tel" name="emergency_phone_1">
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="emergency_phone_type_1" value="Cell"> Cell</label>
+                <label><input type="checkbox" name="emergency_phone_type_1" value="Other"> Other</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Emergency Contact 2:</label>
+            <label> Relationship:</label>
+            <input type="text" name="emergency_relationship_2">
+            <label>Contact Name:</label>
+            <input type="text" name="emergency_name_2">
+            <label>Telephone Number:</label>
+            <input type="tel" name="emergency_phone_2">
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="emergency_phone_type_2" value="Cell"> Cell</label>
+                <label><input type="checkbox" name="emergency_phone_type_2" value="Other"> Other</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Emergency Contact 3:</label>
+            <label>Relationship:</label>
+            <input type="text" name="emergency_relationship_3">
+            <label>Contact Name:</label>
+            <input type="text" name="emergency_name_3">
+            <label>Telephone Number:</label>
+            <input type="tel" name="emergency_phone_3">
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="emergency_phone_type_3" value="Cell"> Cell</label>
+                <label><input type="checkbox" name="emergency_phone_type_3" value="Other"> Other</label>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h3>Child Details</h3>
+        <label>Child's Full Name:</label>
+        <input type="text" name="child_full_name">
+
+        <label>Sex:</label>
+        <div class="radio-group">
+            <label><input type="radio" name="child_sex" value="Female"> Female</label>
+            <label><input type="radio" name="child_sex" value="Male"> Male</label>
+            <label><input type="radio" name="child_sex" value="Other"> Other</label>
+        </div>
+
+        <label>Child's Home Address:</label>
+        <input type="text" name="child_address">
+        <label>Date of Birth:</label>
+        <input type="date" name="child_dob">
+        <label>Date of Acceptance:</label>
+        <input type="date" name="date_acceptance">
+        <label>Date of Discharge:</label>
+        <input type="date" name="date_discharge">
+    </div>
+
+    <div class="section">
+        <h3>Parent / Guardian Information</h3>
+        <label>Name of Person Applying for Child:</label>
+        <input type="text" name="applicant_name">
+        <div class="checkbox-group">
+            <label><input type="checkbox" name="applicant_type" value="Parent"> Parent</label>
+            <label><input type="checkbox" name="applicant_type" value="Guardian"> Guardian</label>
+            <label><input type="checkbox" name="applicant_type" value="Caretaker"> Caretaker</label>
+            <label><input type="checkbox" name="applicant_type" value="Relative"> Relative</label>
+            <label><input type="checkbox" name="applicant_type" value="Other"> Other</label>
+        </div>
+        <label>Home Telephone:</label>
+        <input type="tel" name="applicant_home_phone">
+        <label>Daytime Telephone:</label>
+        <input type="tel" name="applicant_day_phone">
+        <label>Address (if different from child’s):</label>
+        <input type="text" name="applicant_address">
+    </div>
+
+    <div class="section">
+        <h3>Agreements</h3>
+
+  <fieldset>
+   
+
+    <p>
+      I consent to the enrollment of the child listed above in this facility and have been advised of the policies regarding administration of medications, fees, transportation, and the services provided by the facility, and the Office of the Children and Family Services regulations under which it operates. I give consent for my child to take part in neighborhood trips (i.e. library, park, playground) away from the facility under proper supervision.
+    </p>
+    <label><input type="radio" name="consent_trips" value="yes"> Yes</label>
+    <label><input type="radio" name="consent_trips" value="no"> No</label>
+
+    <p>
+      In case of accident or injury, I authorize all emergency medical, dental, and/or surgical care and hospitalization advised by the physicians, surgeon or hospital listed on the other side necessary for the health and wellbeing of my child.
+    </p>
+    <label><input type="radio" name="emergency_care" value="yes"> Yes</label>
+    <label><input type="radio" name="emergency_care" value="no"> No</label>
+
+    <p>
+      I have provided information on my child’s special needs (Allergies, Diet, Disabilities, and/or Medical Information) to the provider as may be necessary to assist the facility in properly caring for my child in case of an emergency.
+    </p>
+    <label><input type="radio" name="special_needs_info" value="yes"> Yes</label>
+    <label><input type="radio" name="special_needs_info" value="no"> No</label>
+
+    <p>
+      I agree to review and update this information whenever a change occurs and at least once every six months.
+    </p>
+    <label><input type="radio" name="update_info" value="yes"> Yes</label>
+    <label><input type="radio" name="update_info" value="no"> No</label>
+
+  </fieldset>
+
+
+    </div>
+
+    <div class="section">
+        <h3>NEW YORK STATE OFFICE OF CHILDREN AND FAMILY SERVICES <br> INDIVIDUAL HEALTH CARE PLAN
+FOR A CHILD WITH SPECIAL HEALTH CARE NEEDS
+ </h3>
+        <label>Describe any additional training, procedures or competencies the caregiver identified will need to carry out the health care plan for the child with special health care needs as identified by the child's parent and/or the child's health care provider. This should include information completed on the medical statement at the time of enrollment or information shared post enrollment. In addition, describe how this additional training and competency will be achieved, including who will provide this training.</label>
+        <textarea name="health_care_plan" rows="5"></textarea>
+
+        <p> This plan was developed in close collaboration with the child's parent and the child's health care provider. The caregivers      identified to provide all treatments and administer medication to the child listed in the specialized individual health care plan are familiar with the childcare regulations and have received any additional training needed and have demonstrated competency to administer such treatment and medication in accordance with the plan identified</p>
+       
+        <label>Program Name:</label>
+        <input type="text" name="program_name">
+        <label>Faculty ID Number:</label>
+        <input type="text" name="faculty_id_number">
+        <label>Program Telephone Number:</label>
+        <input type="text" name="phone_number">
+       
+        <label>Child Care Provider Name:</label>
+        <input type="text" name="care_provider_name">
+        <label>Date:</label>
+        <input type="date" name="care_provider_date">
+        
+        <div class="signature-area">
+            <label>Child Care Provider Signature:</label>
+            <canvas id="signature-pad-provider-ihcp" class="signature-pad"></canvas>
+            <button type="button" class="clear-button" data-canvas-id="signature-pad-provider-ihcp">Clear Signature</button>
+        </div>
+
+        <p>I agree this Individual Health Care Plan meets the needs of my child.</p>
+    <label><input type="radio" name="parent_agree_plan" value="yes"> Yes</label>
+    <label><input type="radio" name="parent_agree_plan" value="no"> No</label>
+
+    <p>I give consent to share information about my child's allergy with all program caregivers in a non-discreet way. I support the strategies the program implements to keep my child from being exposed to known allergen(s), I acknowledge these strategies may include visual reminders that may result in the disclosure of my child’s confidential allergy information to non-childcare staff.</p>
+    <label><input type="radio" name="allergy_info_share" value="yes"> Yes</label>
+    <label><input type="radio" name="allergy_info_share" value="no"> No</label>
+
+        <div class="signature-area">
+          <label>Parent Signature:</label>
+          <canvas id="signature-pad-parent-ihcp" class="signature-pad"></canvas>
+          <button type="button" class="clear-button" data-canvas-id="signature-pad-parent-ihcp">Clear Signature</button>
+          <label>Date:</label>
+          <input type="date" name="parent_date">
+        </div>
+    </div>
+
+    <div class="section">
+        <h3>Written Medication Consent Form</h3>
+
+<ul>
+    <li>This form must be completed in a language in which the childcare provider is literate.</li>
+    <li>One form must be completed for each medication. Multiple medications cannot be listed on one consent form.</li>
+    <li>This form or an approved equivalent may be used when written consent to administer medication to a child is required from both the Licensed Authorized Prescriber and the Parent.</li>
+</ul>
+
+<p><strong>LICENSED AUTHORIZED PRESCRIBER MUST COMPLETE THIS SECTION (#1 - #18)</strong></p>
+
+
+<label>NEW YORK STATE OFFICE OF CHILDREN AND FAMILY SERVICES</label>
+<p>OCFS.LDSS.7002 (5/2014) FRONT</p>
+        
+
+    <div class="form-group">
+        <label>1. Child's First and Last Name:</label>
+        <input type="text" name="childName">
+    </div>
+
+    <div class="form-group">
+        <label>2. Date of Birth:</label>
+        <input type="date" name="dob">
+    </div>
+
+    <div class="form-group">
+        <label>3. Child's Known Allergies:</label>
+        <textarea name="allergies" rows="2"></textarea>
+    </div>
+
+    <div class="form-group">
+        <label>4. Name of Medication (including strength):</label>
+        <input type="text" name="medicationName">
+    </div>
+
+    <div class="form-group">
+        <label>5. Amount/Dosage to be Given:</label>
+        <input type="text" name="dosage">
+    </div>
+
+    <div class="form-group">
+        <label>6. Route of Administration:</label>
+        <input type="text" name="route">
+    </div>
+
+    <div class="form-group">
+        <label>7A. Frequency to be Administered:</label>
+        <input type="text" name="frequency">
+    </div>
+
+    <div class="form-group">
+        <label>7B. Identify tie symptoms that will necessitate administration of medication: (signs and symptoms must be observable and, when possible, measurable parameters) </label>
+        <textarea name="symptoms" rows="3"></textarea>
+    </div>
+
+    <div class="form-group">
+        <label>8A. Possible Side Effects:</label>
+        <div class="checkbox-group">
+            <label><input type="checkbox" name="sideEffectsPackage"> See package insert for complete list of possible side effects (parent must supply)</label>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label>8B. Additional Side Effects:</label>
+        <textarea name="additionalSideEffects" rows="2"></textarea>
+    </div>
+
+    <div class="form-group">
+        <label>9. AWhat action should the childcare provider take if side effects are noted:</label>
+        <div class="checkbox-group">
+            <label><input type="checkbox" name="contactParent"> Contact Parent</label>
+            <label><input type="checkbox" name="contactPrescriber"> Contact prescriber at phone number provided below</label>
+            <label><input type="checkbox" name="otherAction"> Other (describe below)</label>
+        </div>
+        <textarea name="otherActionDesc" rows="2"></textarea>
+    </div>
+
+    <div class="form-group">
+        <label>10A. Special Instructions:</label>
+        <div class="checkbox-group">
+            <label><input type="checkbox" name="specialInstructionsPackage"> See package insert for complete list of special instructions (parent must supply) AND/OR</label>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label>10B. AAdditional special instructions: (Include any concerns related to possible interactions with other medication the child is receiving or concerns regarding the use of the medication as it relates to the child's age, allergies or any pre-existing conditions. Also describe situations when medication should not be administered.)</label>
+        <textarea name="additionalInstructions" rows="3"></textarea>
+    </div>
+
+    <div class="form-group">
+        <label>11. Reason for Medication (unless confidential by law): </label>
+        <textarea name="medicationReason" rows="2"></textarea>
+    </div>
+
+    <div class="form-group">
+        <label>12. Does the above-named child have chronic physical. developmental, behavioral or emotional condition expected to last 12 months or more and require health and related services of a type or amount beyond that required by children generally?</label>
+        <div class="checkbox-group">
+            <label><input type="checkbox" name="chronicNo"> No</label>
+            <label><input type="checkbox" name="chronicYes"> Yes (complete #33-34 below)</label>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label>13. Are the instructions on this consent form a change in a previous medication order as it relates to the dose, time or frequency the medication is to be administered?</label>
+        <div class="checkbox-group">
+            <label><input type="checkbox" name="changeNo"> No</label>
+            <label><input type="checkbox" name="changeYes"> Yes (complete #35-36 below)</label>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label>14. Date Prescriber Authorized:</label>
+        <input type="date" name="dateAuthorized">
+    </div>
+
+    <div class="form-group">
+        <label>15. Date to be discontinued or length of time in days to be given (this date cannot exceed 6 months from the date authorized or this order will not be valid):</label>
+        <input type="text" name="discontinueDate">
+    </div>
+
+    <div class="form-group">
+        <label>16. Prescriber's Name:</label>
+        <input type="text" name="prescriberName">
+    </div>
+
+    <div class="form-group">
+        <label>17. Prescriber's Telephone Number:</label>
+        <input type="text" name="prescriberPhone">
+    </div>
+
+    <div class="form-group">
+        <div class="signature-area">
+             <label>18. Licensed Authorized Prescriber's Signature:</label>
+             <canvas id="signature-pad-prescriber1" class="signature-pad"></canvas>
+             <button type="button" class="clear-button" data-canvas-id="signature-pad-prescriber1">Clear Signature</button>
+        </div>
+    </div>
+
+
+<div class="section">
+    <h2>Parent/Guardian Section (#19-23)</h2>
+
+    <label>19. If Section #7A is completed, do the instructions indicate a specific time to administer the medication? (For example, did the prescriber write 12pm?)</label>
+    <div class="checkbox-group">
+        <label><input type="checkbox" name="q19_yes"> Yes</label>
+        <label><input type="checkbox" name="q19_no"> No</label>
+        <label><input type="checkbox" name="q19_na"> N/A</label>
+    </div>
+    <label>Write the time the childcare program is to administer the medication (e.g., 12pm):</label>
+    <input type="text" name="med_time">
+
+    <label>20. I, the parent, authorize the day care program to administer the medication as specified herein.</label>
+    <label><input type="checkbox" name="q20_authorize"> Authorized</label>
+
+    <label>21. Parent or legal guardian’s name (please print):</label>
+    <input type="text" name="parent_name">
+
+    <label>22. Date authorized:</label>
+    <input type="date" name="date_authorized">
+
+    <div class="signature-area">
+        <label>23. Parent or Legal Guardian’s Signature:</label>
+        <canvas id="signature-pad-parent-med" class="signature-pad"></canvas>
+        <button type="button" class="clear-button" data-canvas-id="signature-pad-parent-med">Clear Signature</button>
+    </div>
+</div>
+
+<div class="section">
+    <h2>Day Care Program Section (#24-30)</h2>
+
+    <label>24. Provider name:</label>
+    <input type="text" name="provider_name" value="Huntington Family Center Inc." readonly>
+
+    <label>25. License/registration number:</label>
+    <input type="text" name="license_number" value="0004242SACC" readonly>
+
+    <label>26. Program telephone number:</label>
+    <input type="text" name="program_phone" value="1-315-476-3157" readonly>
+
+    <label>27. Verification statement:</label>
+    <textarea name="verification" rows="3" readonly>I have verified that #23 and if applicable, #33-#36 are complete. My signature indicates that all information needed to give this medication has been given to the day care program. </textarea>
+
+    <label>28. Childcare provider's name (please print):</label>
+    <input type="text" name="provider_print_name" value="Don Pier" readonly>
+
+    <label>29. Date received from parent:</label>
+    <input type="date" name="date_received">
+
+    <div class="signature-area">
+        <label>30. Childcare provider's signature:</label>
+        <canvas id="signature-pad-provider-med" class="signature-pad"></canvas>
+        <button type="button" class="clear-button" data-canvas-id="signature-pad-provider-med">Clear Signature</button>
+    </div>
+</div>
+
+<div class="section">
+    <h2>ONLY COMPLETE THIS SECTION (#31-32) IF THE PARENT REQUESTS TO DISCONTINUE THE MEDICATION OR TO THE DATE INDICATED IN #15</h2>
+
+    <label>31. I, parent, request that the medication indicated on this consent form be discontinued on:</label>
+    <input type="date" name="discontinue_date">
+
+    <div class="signature-area">
+        <label>32. Parent Signature:</label>
+        <canvas id="signature-pad-discontinue" class="signature-pad"></canvas>
+        <button type="button" class="clear-button" data-canvas-id="signature-pad-discontinue">Clear Signature</button>
+    </div>
+</div>
+
+<div class="section">
+    <h2>LICENSED AUTHORIZED PRESCRIBER TO COMPLETE, AS NEEDED (#33 -#36)</h2>
+
+    <label>33. Describe any additional training, procedures, or competencies the day care program staff will need to care for this child:</label>
+    <textarea name="additional_training" rows="4"></textarea>
+
+    <div class="signature-area">
+        <label>34. Licensed Authorized Prescriber's Signature:</label>
+        <canvas id="signature-pad-prescriber2" class="signature-pad"></canvas>
+        <button type="button" class="clear-button" data-canvas-id="signature-pad-prescriber2">Clear Signature</button>
+    </div>
+
+    <label>35. Since there may be instances where the pharmacy will not fill a new prescription for changes in a prescription related to dose, time or frequency until the medication from the previous prescription is completely used, please indicate the date you are ordering tie change in the administration of the prescription to take place.
+        <br> Date:
+    </label>
+    <input type="date" name="prescription_change_date">
+
+    <p>By completing this section, the day care program will follow the written instruction on this form and not follow the pharmacy label until the new prescription has been filled.</p>
+
+    <div class="signature-area">
+        <label>36. Licensed Authorized Prescriber's Signature:</label>
+        <canvas id="signature-pad-prescriber3" class="signature-pad"></canvas>
+        <button type="button" class="clear-button" data-canvas-id="signature-pad-prescriber3">Clear Signature</button>
+    </div>
+</div>
+
+    <button type="submit">Submit Form</button>
+
+</form>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Select all canvases with the class 'signature-pad'
+        const signaturePads = document.querySelectorAll('.signature-pad');
+
+        signaturePads.forEach(pad => {
+            const ctx = pad.getContext('2d');
+            let drawing = false;
+
+            // Set the canvas size explicitly (Standardized)
+            pad.width = 400; 
+            pad.height = 100;
+
+            const getMousePos = (canvas, evt) => {
+                const rect = canvas.getBoundingClientRect();
+                // Check for touch event or mouse event
+                const clientX = evt.clientX !== undefined ? evt.clientX : evt.touches[0].clientX;
+                const clientY = evt.clientY !== undefined ? evt.clientY : evt.touches[0].clientY;
+                return {
+                    x: clientX - rect.left,
+                    y: clientY - rect.top
+                };
+            };
+
+            const startDrawing = (e) => {
+                drawing = true;
+                const pos = getMousePos(pad, e);
+                ctx.beginPath();
+                ctx.moveTo(pos.x, pos.y);
+            };
+
+            const stopDrawing = () => {
+                drawing = false;
+                ctx.beginPath(); // Reset the path for the next stroke
+            };
+
+            const draw = (e) => {
+                if (!drawing) return;
+                const pos = getMousePos(pad, e);
+                ctx.lineWidth = 2;
+                ctx.lineCap = 'round';
+                ctx.strokeStyle = '#000';
+                ctx.lineTo(pos.x, pos.y);
+                ctx.stroke();
+                ctx.beginPath(); // Move the path start to the current point to ensure a continuous line
+                ctx.moveTo(pos.x, pos.y); 
+            };
+
+            // Mouse Events
+            pad.addEventListener('mousedown', startDrawing);
+            pad.addEventListener('mouseup', stopDrawing);
+            pad.addEventListener('mouseleave', stopDrawing);
+            pad.addEventListener('mousemove', draw);
+
+            // Touch Events
+            pad.addEventListener('touchstart', (e) => {
+                e.preventDefault(); // Prevent scrolling
+                startDrawing(e);
+            });
+            pad.addEventListener('touchend', stopDrawing);
+            pad.addEventListener('touchmove', (e) => {
+                e.preventDefault();
+                draw(e);
+            });
+        });
+
+        // Clear button functionality for all clear buttons
+        document.querySelectorAll('.clear-button').forEach(button => {
+            button.addEventListener('click', function() {
+                const canvasId = this.getAttribute('data-canvas-id');
+                const canvas = document.getElementById(canvasId);
+                if (canvas) {
+                    const ctx = canvas.getContext('2d');
+                    // Clear the entire canvas
+                    ctx.clearRect(0, 0, canvas.width, canvas.height);
+                }
+            });
+        });
+    });
+</script>
+
+</body>
+</html>
