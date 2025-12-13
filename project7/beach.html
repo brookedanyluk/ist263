@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cape Cod Beach Access</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+
+ <h1 class="site-title">Cape Cod Beach Access</h1>
+
+  <div class="header-right">
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="activities.html">Activities</a></li>
+        <li><a href="beach.html">Beach Access</a></li>
+      </ul>
+    </nav>
+
+     <input class="search-input" type="search" placeholder="Search">
+  
+  
+  </div>
+  </header>
+
+    <section class="welcome-section">
+    <h2 class="highlight-box">Beach</h2>
+  </section>
+
+<main>
+  <p class="highlight-box2">Planning a day at the beach is easy with our guide to Cape Cod’s best beaches. From rules and parking to passes and travel tips, you’ll find everything you need to enjoy a safe and relaxing visit</p>
+
+     
+
+<div class="beach-info-container">
+  <!-- Left column: Beach Rules -->
+  <div class="beach-info">
+    <h2>Beach Rules</h2>
+    <ul>
+      <li>Swim in designated areas only</li>
+      <li>No littering — use trash and recycling bins</li>
+      <li>Pets may be restricted on certain beaches or require leashes</li>
+      <li>Fires and alcohol are typically prohibited</li>
+      <li>Always follow posted signs and local regulations</li>
+    </ul>
+  </div>
+
+  <!-- Center image -->
+  <img src="images/beachrules.jpg" alt="Cape Cod beach with sand dunes" class="beach-image">
+
+  <!-- Right column: Parking & Pricing -->
+  <div class="beach-info">
+    <h2>Parking and Pricing</h2>
+    <ul>
+      <li>Most beaches have designated parking areas. Fees and pass requirements vary by location and season</li>
+      <li>Daily passes: Required at many beaches during peak season</li>
+      <li>Seasonal passes: Provide unlimited access for a set period</li>
+      <li>Payment options: Available online or at local kiosks</li>
+    </ul>
+  </div>
+</div>
+
+    <div class="highlight-box">
+  <h2>Travel Tips</h2>
+  <ul>
+    <ul><strong>Weather:</strong> Check forecasts before visiting. Summer is busiest, while spring and fall are quieter.</ul>
+    <ul><strong>Transportation:</strong> Beaches are accessible by car, bike, and public transportation. Plan ahead for parking and traffic.</ul>
+    <ul><strong>Local Resources:</strong> Visit town websites or visitor centers for updated hours, regulations, and events.</ul>
+  </ul>
+</div>
+
+<div class="highlight-box">
+  <h2>Plan Your Beach Visit</h2>
+      <p>Review each beach’s access requirements and parking options in advance. Purchase passes or tickets online to ensure entry, and check for any seasonal or special regulations that may affect your visit.</p>
+    </div>
+
+
+
+
+
+<div class="highlight-box">
+  <h2>Purchase a Beach Pass</h2>
+  <form id="beach-pass-form">
+    <label for="name">Full Name:</label><br>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="email">Email Address:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="pass-type">Pass Type:</label><br>
+    <select id="pass-type" name="pass-type" required>
+      <option value="">Select a pass</option>
+      <option value="daily">Daily Pass - $30</option>
+      <option value="weekly">Weekly Pass - $200</option>
+      <option value="seasonal">Seasonal Pass - $1,000</option>
+    </select><br><br>
+
+    <label for="quantity">Quantity:</label><br>
+    <input type="number" id="quantity" name="quantity" min="1" value="1" required><br><br>
+
+    <button type="submit">Purchase Pass</button>
+  </form>
+</div>
+
+<script>
+  document.getElementById('beach-pass-form').addEventListener('submit', function(e) {
+    e.preventDefault(); 
+    const name = document.getElementById('name').value;
+    const pass = document.getElementById('pass-type').value;
+    const qty = document.getElementById('quantity').value;
+    alert(`Thank you, ${name}! You have purchased ${qty} ${pass}(s). Enjoy your beach day!`);
+  });
+</script>
+
+
+
+    <img src="images/oceanwhale.jpg" alt="Cape Cod beach with sand dunes" class="centered-image">
+
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Cape Cod Travel Guide</p>
+  </footer>
+</body>
+</html>
