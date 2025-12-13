@@ -536,3 +536,14 @@ h2.section-title {
   object-fit: cover;
   height: 500px; /* fixed height for each image */
 }
+
+.slider-heading {
+  display: block;           /* ensure it’s treated as block */
+  width: 100%;              /* full width */
+  text-align: center !important; /* force center alignment */
+  color: #0A4D68 !important;     /* force the color */
+  font-size: 2rem;          /* adjust font size */
+  margin-bottom: 1rem;      /* space below heading */
+  font-weight: bold;
+}
+
