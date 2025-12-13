@@ -485,12 +485,14 @@ h2.section-title {
   height: 150px
 }
 
-
 .image-slider {
   position: relative;
+  width: 100%;
   max-width: 700px;
   margin: 20px auto;
   overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
 .slides {
@@ -500,9 +502,10 @@ h2.section-title {
 
 .slide {
   min-width: 100%;
-  display: block;
+  object-fit: cover;
 }
 
+/* Arrow buttons */
 .prev, .next {
   position: absolute;
   top: 50%;
@@ -510,24 +513,26 @@ h2.section-title {
   background-color: rgba(0,0,0,0.5);
   color: white;
   border: none;
-  padding: 10px;
+  font-size: 2rem;
+  padding: 5px 10px;
   cursor: pointer;
-  font-size: 20px;
+  border-radius: 5px;
 }
 
-.prev { left: 10px; }
-.next { right: 10px; }
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
 
-.image-slider {
-  position: relative;
-  max-width: 700px; 
-  margin: 20px auto;
-  overflow: hidden;
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
 }
 
 .slide {
   min-width: 100%;
-  max-height: 500px;
-  object-fit: cover;  
-  display: block;
+  object-fit: cover;
+  height: 500px; /* fixed height for each image */
 }
