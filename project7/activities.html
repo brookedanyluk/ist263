@@ -44,15 +44,18 @@
 
 
 
-<section class="image-grid">
-  <img src="images/lighthouse.jpg" alt="Cape Cod lighthouse">
-  <img src="images/whale.jpg" alt="Whale art">
-  <img src="images/seafood.jpg" alt="Seafood shack">
-  <img src="images/beach.jpg" alt="People on beach during daytime">
-  <img src="images/shell.jpg" alt="Hand holding up seashell">
-  <img src="images/bike.jpg" alt="Bike near the ocean">
+<section class="image-slider">
+  <div class="slides">
+    <img src="images/lighthouse.jpg" alt="Cape Cod lighthouse" class="slide">
+    <img src="images/whale.jpg" alt="Whale art" class="slide">
+    <img src="images/seafood.jpg" alt="Seafood shack" class="slide">
+    <img src="images/beach.jpg" alt="People on beach during daytime" class="slide">
+    <img src="images/shell.jpg" alt="Hand holding up seashell" class="slide">
+    <img src="images/bike.jpg" alt="Bike near the ocean" class="slide">
+  </div>
+  <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+  <button class="next" onclick="plusSlides(1)">&#10095;</button>
 </section>
-
 
 
 
@@ -128,6 +131,38 @@
 </div>
 
   </main>
+
+
+
+
+<script>
+let slideIndex = 0;
+const slides = document.querySelectorAll('.slide');
+
+function showSlides() {
+  slides.forEach((slide, i) => {
+    slide.style.transform = `translateX(-${slideIndex * 100}%)`;
+  });
+}
+
+// Next/previous controls
+function plusSlides(n) {
+  slideIndex += n;
+  if (slideIndex < 0) slideIndex = slides.length - 1;
+  if (slideIndex >= slides.length) slideIndex = 0;
+  showSlides();
+}
+
+// Auto-slide every 3 seconds
+setInterval(() => {
+  plusSlides(1);
+}, 3000);
+
+// Initialize
+showSlides();
+</script>
+
+
 
   <footer>
     <p>&copy; 2025 Cape Cod Travel Guide</p>
