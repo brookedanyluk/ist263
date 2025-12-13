@@ -485,65 +485,92 @@ h2.section-title {
   height: 150px
 }
 
+
+
+
+/* Slider heading */
+.slider-heading {
+  color: #0A4D68;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 0.5rem 0; /* reduce space */
+}
+/* Slider section */
 .image-slider {
+  width: 250px;            /* tiny width */
+  height: 150px;           /* tiny height */
+  margin: 1rem auto;
+  text-align: center;
   position: relative;
-  width: 100%;
-  max-width: 700px;
-  margin: 20px auto;
   overflow: hidden;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
+/* Slider heading */
+.slider-heading {
+  color: #0A4D68;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+/* Slider section */
+.image-slider {
+  width: 80%;          /* responsive width */
+  max-width: 700px;    /* max width */
+  height: 400px;       /* medium height */
+  margin: 2rem auto;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+/* Slides container */
 .slides {
   display: flex;
   transition: transform 0.5s ease-in-out;
+  height: 100%;
 }
 
-.slide {
-  min-width: 100%;
-  object-fit: cover;
+/* Each slide wrapper */
+.slide-wrapper {
+  flex: 0 0 100%;      /* one slide per view */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
-/* Arrow buttons */
+/* Image inside slide */
+.slide-wrapper img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;   /* shows full image without cropping */
+  display: block;
+  border-radius: 6px;
+}
+
+/* Navigation buttons */
 .prev, .next {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(10, 77, 104, 0.7);
   color: white;
   border: none;
-  font-size: 2rem;
-  padding: 5px 10px;
+  padding: 0.5rem 0.8rem;
+  font-size: 1.2rem;
   cursor: pointer;
   border-radius: 5px;
 }
 
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
+.prev { left: 10px; }
+.next { right: 10px; }
 
-.prev {
-  left: 10px;
+/* Responsive */
+@media (max-width: 768px) {
+  .image-slider {
+    height: 250px;
+  }
 }
-
-.next {
-  right: 10px;
-}
-
-.slide {
-  min-width: 100%;
-  object-fit: cover;
-  height: 500px; /* fixed height for each image */
-}
-
-.slider-heading {
-  display: block;           /* ensure it’s treated as block */
-  width: 100%;              /* full width */
-  text-align: center !important; /* force center alignment */
-  color: #0A4D68 !important;     /* force the color */
-  font-size: 2rem;          /* adjust font size */
-  margin-bottom: 1rem;      /* space below heading */
-  font-weight: bold;
-}
-
