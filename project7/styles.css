@@ -233,6 +233,14 @@ main {
   height: auto;
 }
 
+.itinerary-section-heading {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 28px;
+  color: #0A4D68;
+}
+
+
 /* ==============================
    IMAGE SLIDER
    ============================== */
@@ -462,13 +470,3 @@ footer {
   }
 }
 
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0,0,0,0);
-  border: 0;
-}
