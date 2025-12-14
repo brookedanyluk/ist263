@@ -255,6 +255,11 @@ main {
   border-radius: 8px;
 }
 
+.itinerary-section-heading {
+  margin-bottom: 20px; /* adjust as needed */
+}
+
+
 /* Optional: make grid responsive on smaller screens */
 @media (max-width: 600px) {
   .itinerary-container {
