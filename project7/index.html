@@ -2,153 +2,193 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cape Cod Guide | Home</title>
-  <link rel="icon" type="image/x-icon" href="/ist263/project7/favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
   <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-  <header>
-    <h1 class="site-title">Visit Cape Cod</h1>
+<!-- Skip to content link -->
+<a href="#main-content" class="skip-link">Skip to main content</a>
 
-    <div class="header-right">
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="activities.html">Activities</a></li>
-          <li><a href="beach.html">Beaches</a></li>
-        </ul>
-      </nav>
+<header>
+  <h1 class="site-title">Visit Cape Cod</h1>
 
-      <input class="search-input" type="search" placeholder="Search">
-    </div>
-  </header>
+  <div class="header-right">
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="activities.html">Activities</a></li>
+        <li><a href="beach.html">Beaches</a></li>
+      </ul>
+    </nav>
 
-  <section class="welcome-section">
-    <h2 class="highlight-box">Welcome to Your Cape Cod Travel Guide</h2>
-    <a href="#plan" class="cta-button">Start Planning</a>
-  </section>
+    <!-- Search form -->
+    <form action="index.html" method="get">
+      <label for="site-search" class="visually-hidden">Search the site</label>
+      <input id="site-search" class="search-input" type="search" name="search" placeholder="Search">
+    </form>
+  </div>
+</header>
 
-  <main>
-    <p class="highlight-box2">
-      Explore hidden gems, discover must-see attractions, and find local favorites that make Cape Cod truly special. Our guide features the best beaches, top-rated restaurants, cozy inns, and exciting seasonal events. Whether you’re chasing sunsets in Provincetown, enjoying fresh seafood in Chatham, or exploring the dunes of the National Seashore, you’ll find everything you need here to make your trip unforgettable
-    </p>
+<section class="welcome-section">
+  <h2 class="highlight-box">Welcome to Your Cape Cod Travel Guide</h2>
+  <a href="#plan" class="cta-button">Start Planning</a>
+</section>
 
-    <div class="main-grid">
-      <div class="content">
-        <h2 class="section-title">Explore Cape Cod</h2>
+<main id="main-content">
 
-        <div class="explore-grid">
-          <div class="info-card">
-            <h3>Attractions</h3>
-            <p>Visit iconic lighthouses, go whale watching, and explore scenic bike trails that showcase Cape Cod’s rich history and beauty</p>
-          </div>
+  <p class="highlight-box2">
+    Explore hidden gems, discover must-see attractions, and find local favorites that make Cape Cod truly special.
+    Our guide features the best beaches, top-rated restaurants, cozy inns, and exciting seasonal events.
+    Whether you’re chasing sunsets in Provincetown, enjoying fresh seafood in Chatham,
+    or exploring the dunes of the National Seashore, you’ll find everything you need here to make your trip unforgettable.
+  </p>
 
-          <div class="info-card">
-            <h3>Restaurants</h3>
-            <p>Experience the flavors of the region with fresh seafood, waterfront dining, and local favorites</p>
-          </div>
+  <div class="main-grid">
 
-          <div class="info-card">
-            <h3>Beaches & Passes</h3>
-            <p>Relax on the beach, enjoy beautiful sunsets, and purchase passes online for a hassle-free visit</p>
-          </div>
+    <section class="content">
+      <h2 class="section-title">Explore Cape Cod</h2>
 
-          <div class="info-card">
-            <h3>Events</h3>
-            <p>Stay up to date on local festivals, markets, and seasonal happenings that bring the Cape to life</p>
-          </div>
+      <div class="explore-grid">
+
+        <div class="info-card">
+          <h3>Attractions</h3>
+          <p>
+            Visit iconic lighthouses, go whale watching, and explore scenic bike trails that showcase
+            Cape Cod’s rich history and beauty
+          </p>
         </div>
 
-        <!-- Plan Section -->
-        <section id="plan" class="plan">
-          <div class="highlight-box">
-            <h2 class="section-title">Plan Your Trip</h2>
-            <p>
-              Not sure where to start? <br>
-              Our featured itineraries and suggested activities can help guide you through the best Cape Cod has to offer. Whether you’re looking for outdoor adventures, local history, or a relaxing day by the ocean, our website makes planning simple
-            </p>
-          </div> <!-- highlight-box div closed -->
-        </section> <!-- plan section closed -->
+        <div class="info-card">
+          <h3>Restaurants</h3>
+          <p>
+            Experience the flavors of the region with fresh seafood, waterfront dining,
+            and local favorites
+          </p>
+        </div>
 
-      </div> <!-- content div closed -->
+        <div class="info-card">
+          <h3>Beaches & Passes</h3>
+          <p>
+            Relax on the beach, enjoy beautiful sunsets, and purchase passes online for a hassle-free visit
+          </p>
+        </div>
 
-      <div class="sidebar">
-        <img src="images/beach1.jpg" alt="Scenic Cape Cod coastline">
-        <img src="images/sign.jpg" alt="Welcome to Cape Cod sign">
-      </div> <!-- sidebar div closed -->
+        <div class="info-card">
+          <h3>Events</h3>
+          <p>
+            Stay up to date on local festivals, markets, and seasonal happenings that bring the Cape to life
+          </p>
+        </div>
 
-    </div> <!-- main-grid div closed -->
+      </div>
 
-    <!-- Itinerary Section -->
-    <div class="itinerary-container">
+      <!-- Plan Section -->
+      <section id="plan" class="plan">
+        <div class="highlight-box">
+          <h2 class="section-title">Plan Your Trip</h2>
+          <p>
+            Not sure where to start? <br>
+            Our featured itineraries and suggested activities can help guide you through the best Cape Cod has to offer.
+            Whether you’re looking for outdoor adventures, local history, or a relaxing day by the ocean,
+            our website makes planning simple
+          </p>
+        </div>
+      </section>
 
-      <div class="itinerary-box">
-        <h2>Itinerary 1:<br> Classic Cape Cod</h2>
-        <img src="images/turo.jpg" alt="Cape Cod lighthouse" class="itinerary-icon">
-        <h3>Morning</h3>
-        <ul>
-          <li>Breakfast in Hyannis (try a local café or bakery)</li>
-          <li>Walk along Hyannis Harbor or Main Street shops</li>
-        </ul>
-        <h3>Afternoon</h3>
-        <ul>
-          <li>Drive to Nauset Beach (Eastham) or Craigville Beach</li>
-          <li>Lunch nearby (casual seafood or a beachside shack)</li>
-        </ul>
-        <h3>Evening</h3>
-        <ul>
-          <li>Dinner in Chatham</li>
-          <li>Stroll around Chatham Lighthouse at sunset</li>
-        </ul>
-      </div> <!-- itinerary-box 1 closed -->
+    </section>
 
-      <div class="itinerary-box">
-        <h2>Itinerary 2:<br> Active & Outdoorsy Cape</h2>
-        <img src="images/sunset.jpg" alt="Sunset on the beach" class="itinerary-icon">
-        <h3>Morning</h3>
-        <ul>
-          <li>Rent bikes and ride the Cape Cod Rail Trail</li>
-          <li>Stop in Brewster for coffee or a quick snack</li>
-        </ul>
-        <h3>Afternoon</h3>
-        <ul>
-          <li>Visit the Cape Cod National Seashore</li>
-          <li>Explore Coast Guard Beach or Marconi Beach</li>
-        </ul>
-        <h3>Evening</h3>
-        <ul>
-          <li>Casual dinner in Wellfleet</li>
-          <li>Watch the sunset over Wellfleet Bay</li>
-        </ul>
-      </div> <!-- itinerary-box 2 closed -->
+    <aside class="sidebar">
+      <img src="images/beach1.jpg" alt="Scenic Cape Cod coastline">
+      <img src="images/sign.jpg" alt="Welcome to Cape Cod sign">
+    </aside>
 
-      <div class="itinerary-box">
-        <h2>Itinerary 3:<br> Arts, Food, & Towns</h2>
-        <img src="images/lobster.jpg" alt="Lobster Landing Shack" class="itinerary-icon">
-        <h3>Morning</h3>
-        <ul>
-          <li>Breakfast in Provincetown</li>
-          <li>Walk Commercial Street (galleries, shops, and cafés)</li>
-        </ul>
-        <h3>Afternoon</h3>
-        <ul>
-          <li>Visit the Pilgrim Monument</li>
-          <li>Lunch with ocean views</li>
-          <li>Ferry or drive to Truro for beaches or vineyards</li>
-        </ul>
-        <h3>Evening</h3>
-        <ul>
-          <li>Dinner in Provincetown</li>
-          <li>Optional live music or a sunset sail</li>
-        </ul>
-      </div> <!-- itinerary-box 3 closed -->
+  </div>
 
-    </div> <!-- itinerary-container closed -->
+  <!-- Itinerary Section -->
+  <section class="itinerary-container">
 
-  </main>
+    <article class="itinerary-box">
+      <h2>Itinerary 1:<br> Classic Cape Cod</h2>
+      <img src="images/turo.jpg" alt="Cape Cod lighthouse" class="itinerary-icon">
+
+      <h3>Morning</h3>
+      <ul>
+        <li>Breakfast in Hyannis (try a local café or bakery)</li>
+        <li>Walk along Hyannis Harbor or Main Street shops</li>
+      </ul>
+
+      <h3>Afternoon</h3>
+      <ul>
+        <li>Drive to Nauset Beach (Eastham) or Craigville Beach</li>
+        <li>Lunch nearby (casual seafood or a beachside shack)</li>
+      </ul>
+
+      <h3>Evening</h3>
+      <ul>
+        <li>Dinner in Chatham</li>
+        <li>Stroll around Chatham Lighthouse at sunset</li>
+      </ul>
+    </article>
+
+    <article class="itinerary-box">
+      <h2>Itinerary 2:<br> Active & Outdoorsy Cape</h2>
+      <img src="images/sunset.jpg" alt="Sunset on the beach" class="itinerary-icon">
+
+      <h3>Morning</h3>
+      <ul>
+        <li>Rent bikes and ride the Cape Cod Rail Trail</li>
+        <li>Stop in Brewster for coffee or a quick snack</li>
+      </ul>
+
+      <h3>Afternoon</h3>
+      <ul>
+        <li>Visit the Cape Cod National Seashore</li>
+        <li>Explore Coast Guard Beach or Marconi Beach</li>
+      </ul>
+
+      <h3>Evening</h3>
+      <ul>
+        <li>Casual dinner in Wellfleet</li>
+        <li>Watch the sunset over Wellfleet Bay</li>
+      </ul>
+    </article>
+
+    <article class="itinerary-box">
+      <h2>Itinerary 3:<br> Arts, Food, & Towns</h2>
+      <img src="images/lobster.jpg" alt="Lobster Landing Shack" class="itinerary-icon">
+
+      <h3>Morning</h3>
+      <ul>
+        <li>Breakfast in Provincetown</li>
+        <li>Walk Commercial Street (galleries, shops, and cafés)</li>
+      </ul>
+
+      <h3>Afternoon</h3>
+      <ul>
+        <li>Visit the Pilgrim Monument</li>
+        <li>Lunch with ocean views</li>
+        <li>Ferry or drive to Truro for beaches or vineyards</li>
+      </ul>
+
+      <h3>Evening</h3>
+      <ul>
+        <li>Dinner in Provincetown</li>
+        <li>Optional live music or a sunset sail</li>
+      </ul>
+    </article>
+
+  </section>
+
+</main>
+
+<footer>
+  <p>&copy; 2025 Visit Cape Cod</p>
+</footer>
 
 </body>
 </html>
